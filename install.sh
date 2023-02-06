@@ -2,11 +2,11 @@
 
 ./installers.sh
 ./zsh.sh
-./default-apps.sh
+./default.sh
 
 # dev
 ./dev/git.sh
-./dev/default-dev.sh
+./dev/default.sh
 ./dev/c.sh
 ./dev/python.sh
 ./dev/ruby.sh
@@ -19,5 +19,5 @@
 ./infra/kubernetes.sh
 
 # databases
-./db-clients.sh
+./clients.sh
 
