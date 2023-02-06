@@ -5,18 +5,18 @@
 ./default-apps.sh
 
 # dev
-./default-dev.sh
-./git.sh
-./c.sh
-./python.sh
-./ruby.sh
-./go.sh
-./nodejs.sh
-./java.sh
+./dev/git.sh
+./dev/default-dev.sh
+./dev/c.sh
+./dev/python.sh
+./dev/ruby.sh
+./dev/go.sh
+./dev/nodejs.sh
+./dev/java.sh
 
 # infra
-./docker.sh
-./kubernetes.sh
+./infra/docker.sh
+./infra/kubernetes.sh
 
 # databases
 ./db-clients.sh
