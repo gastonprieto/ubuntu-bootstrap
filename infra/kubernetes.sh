@@ -44,3 +44,12 @@ kubectl krew install kvaps/node-shell && \
 kubectl krew install score && \
 kubectl krew install snap
 
+# Helm
+HELM_DOWNLOAD_FILE=helm-v2.16.12-linux-amd64.tar.gz
+HELM_DIRECTORY=helm-installation
+
+cd $APPS && \
+curl -O https://get.helm.sh/$HELM_DOWNLOAD_FILE && \
+tar -zxvf $HELM_DOWNLOAD_FILE --directory=$HELM_DIRECTORY && \
+ln -s $APPS/$HELM_DIRECTORY/linux-amd64/helm helm && \
+rm -r $HELM_DOWNLOAD_FILE linux-amd64/
