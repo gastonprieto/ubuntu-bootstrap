@@ -1,8 +1,8 @@
 #!/bin/bash
 
-./installers.sh
-./zsh.sh
-./default.sh
+./default/installers.sh
+./default/zsh.sh
+./default/default.sh
 ./default/nerd-fonts.sh
 
 # dev
