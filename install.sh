@@ -3,6 +3,7 @@
 ./installers.sh
 ./zsh.sh
 ./default.sh
+./default/nerd-fonts.sh
 
 # dev
 ./dev/git.sh
