@@ -17,6 +17,7 @@
 # infra
 ./infra/docker.sh
 ./infra/kubernetes.sh
+./infra/aws.sh
 
 # databases
 ./clients.sh
