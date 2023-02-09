@@ -1,11 +1,8 @@
 #!/bin/bash
 
+APPS_TO_INSTALL='terminator filezilla tree ttf-mscorefonts-installer'
+
 # Apps
-sudo apt-get install -y terminator && \
-sudo apt-get install -y filezilla && \
-sudo apt-get install -y simplescreenrecorder && \
-sudo apt-get install -y tree && \
-sudo apt-get install -y redshift redshift-gtk && \
-sudo apt-get install -y ttf-mscorefonts-installer && \
+sudo apt-get install -y $APPS_TO_INSTALL && \
 sudo fc-cache -f -v && \
 snap install slack --classic 
