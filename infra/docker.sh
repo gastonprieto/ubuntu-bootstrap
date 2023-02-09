@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Docker
+
+echo "Installing docker..."
+
 sudo apt-get update
 sudo apt-get install -y \
     apt-transport-https \
@@ -19,3 +22,5 @@ sudo groupadd docker && \
 sudo usermod -aG docker $USER && \
 newgrp docker && \
 docker run hello-world
+
+echo "Installed docker"

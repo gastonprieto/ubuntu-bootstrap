@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Ruby
+
+echo "Installing ruby..."
+
 sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev && \
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
 cd ~/.rbenv && \
@@ -22,3 +25,5 @@ export RUBY_VERSION=2.4.2 && \
 rbenv install $RUBY_VERSION && \
 rbenv global $RUBY_VERSION && \
 gem install compass bundler
+
+echo "Installed ruby"

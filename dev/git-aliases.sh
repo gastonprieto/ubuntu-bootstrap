@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Adding git aliases..."
+
 # common aliases
 git config --global alias.st "status -sb"
 git config --global alias.br "branch"
@@ -47,3 +49,5 @@ git config --global alias.drop3 "stash drop stash@{3}"
 git config --global alias.drop4 "stash drop stash@{4}"
 git config --global alias.drop5 "stash drop stash@{5}"
 git config --global alias.drop6 "stash drop stash@{6}"
+
+echo "Added git aliases"

@@ -2,12 +2,16 @@
 
 # NodeJS
 
+echo "Installing nvm and nodejs..."
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash && \
 source $ZSH_FILE && \
 nvm install node && \
 nvm install 10 && \
 nvm install 8 && \
 nvm use node 
+
+echo "  Adding nvm to zshrc..."
 
 echo '#' >> $ZSH_FILE
 echo '# nvm' >> $ZSH_FILE
@@ -35,3 +39,7 @@ echo "  fi" >> $ZSH_FILE
 echo "}" >> $ZSH_FILE
 echo "add-zsh-hook chpwd load-nvmrc" >> $ZSH_FILE
 echo "load-nvmrc" >> $ZSH_FILE
+
+echo "  Added nvm to zshrc"
+
+echo "Installed nvm and nodejs"

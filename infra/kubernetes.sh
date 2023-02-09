@@ -2,6 +2,8 @@
 
 # Kubectl
 
+echo "Installing kubectl..."
+
 sudo apt-get update && \
 sudo apt-get install -y apt-transport-https ca-certificates curl && \
 cd $APPS && \
@@ -16,7 +18,11 @@ echo 'alias k=kubectl' >> $ZSH_FILE && \
 echo 'compdef __start_kubectl k' >> $ZSH_FILE && \ 
 echo '' >> $ZSH_FILE
 
+echo "Installed docker"
+
 # Krew
+
+echo "Installing krew..."
 
 cd "$(mktemp -d)" && \
 OS="$(uname | tr '[:upper:]' '[:lower:]')" && \
@@ -44,7 +50,12 @@ kubectl krew install kvaps/node-shell && \
 kubectl krew install score && \
 kubectl krew install snap
 
+echo "Installed krew"
+
 # Helm
+
+echo "Installing helm..."
+
 HELM_DOWNLOAD_FILE=helm-v2.16.12-linux-amd64.tar.gz
 HELM_DIRECTORY=helm-installation
 
@@ -53,3 +64,5 @@ curl -O https://get.helm.sh/$HELM_DOWNLOAD_FILE && \
 tar -zxvf $HELM_DOWNLOAD_FILE --directory=$HELM_DIRECTORY && \
 ln -s $APPS/$HELM_DIRECTORY/linux-amd64/helm helm && \
 rm -r $HELM_DOWNLOAD_FILE linux-amd64/
+
+echo "Installed helm"
