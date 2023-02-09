@@ -19,7 +19,7 @@ antigen theme bira
 #
 
 antigen bundles <<EOBUNDLES
-git
+
 zsh-users/zsh-syntax-highlighting
 colored-man-pages
 HeroCC/LS_COLORS
