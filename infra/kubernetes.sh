@@ -13,6 +13,7 @@ echo '# kubectl' >> $ZSH_FILE && \
 echo '#' >> $ZSH_FILE && \
 echo '' >> $ZSH_FILE && \
 echo 'alias k=kubectl' >> $ZSH_FILE && \
+echo 'compdef __start_kubectl k' >> $ZSH_FILE && \ 
 echo '' >> $ZSH_FILE
 
 # Krew
